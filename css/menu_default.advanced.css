@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+/** 
+ * NVIDIA Advanced CSS Drop-Down Menu Theme
+ *
+ * @file		default.advanced.css
+ * @name		NVIDIA
+ * @version		0.1
+ * @type		transitional
+ * @browsers	Windows: IE7+, Opera7+, Firefox3+
+ *				Mac OS: Safari2+, Firefox3+
+ *
+ * @link		http://www.lwis.net/free-css-drop-down-menu
+ * @copyright	2008-2012 Live Web Initiatives, http://www.lwis.net
+ *
+ */
+
+@import "menu_default.css";
+
+
+/* -- Base style extension -- */
+/* -- pading botones main afecta distancia entre top y menu principal y submenu -- */
+ul.dropdown li a {
+ display: block;
+ padding-top: 14px;
+ padding-bottom:7px;
+ padding-left:17px;
+ padding-right:17px;
+}
+
+
+/* -- Base style override -- */
+
+ul.dropdown li {
+ padding: 0;
+}
+
+
+/* -- Base style reinitiate: post-override activities -- */
+
+ul.dropdown li.dir {
+ padding: 7px 20px 7px 14px;
+}
+
+ul.dropdown ul li.dir {
+ padding-right: 15px;
+}
+
+
+/* -- Custom -- */
+
+ul.dropdown ul a {
+ padding: 6px 15px 6px 15px;/*padding para los submenu separacion entre cada boton dentro del submenu*/
+ width: 151px; /* Especially for IE */
+}
+
+ul.dropdown ul a:hover {
+ background-color: #2a2a2a;
+}
+
+
+/* -- Drop-down open -- */
+
+ul.dropdown li:hover > a.dir {
+ /*background-color: #76b900;*/
+ color: #ff9560;/*color del hover del menu principal*/
+}
+
+ul.dropdown ul li:hover > a.dir {
+ background-color: #76b900;
+ color: #fff;
+}
